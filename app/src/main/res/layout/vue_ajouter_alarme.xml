@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom|end"
+    android:orientation="vertical"
+    tools:context=".vue.AjouterAlarme">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:text="Page ajouter alarme" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/simpleDatePicker"
+        android:headerBackground="#424242"
+        android:numbersSelectorColor="#1565C0" />
+
+    <TextView
+        android:id="@+id/text_jour"
+        android:paddingTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePicker"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:paddingBottom="20dp"
+        android:text="jj/mm/aaaa" />
+
+    <Button
+        android:id="@+id/action_changer_jour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_jour"
+        android:layout_centerHorizontal="true"
+        android:text="Changer jour" />
+
+    <TextView
+        android:id="@+id/texte_ajout_alarme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_changer_jour"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="50dp"
+        android:text="Quand allez vous pecher ce poisson ?"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/action_enregistrer_alarme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Enregistrer" />
+
+</RelativeLayout>

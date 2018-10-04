@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ca.qc.cgmatane.informatique.fishfinder">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="My Fish Book"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ListePoisson">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".vue.ModifierPoisson" />
+        <activity android:name=".vue.AjouterPoisson" />
+        <activity android:name=".vue.AjouterAlarme" />
+        <activity android:name=".vue.AlarmeEcran" />
+
+        <receiver
+            android:name=".donnee.Alarme"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".vue.ChoixJour"></activity>
+    </application>
+
+</manifest>

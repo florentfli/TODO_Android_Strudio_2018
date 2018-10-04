@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".vue.AjouterPoisson">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Page ajouter poisson" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingTop="20dp"
+        android:layout_below="@id/textView"
+        android:text="Nom : " />
+
+    <EditText
+        android:id="@+id/vue_ajouter_poisson_champ_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:ems="10"
+        android:backgroundTint="#1565C0"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingTop="20dp"
+        android:layout_below="@id/vue_ajouter_poisson_champ_nom"
+        android:text="Famille : " />
+
+    <EditText
+        android:id="@+id/vue_ajouter_poisson_champ_famille"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:ems="10"
+        android:backgroundTint="#1565C0"
+        android:inputType="textPersonName" />
+
+    <CheckBox
+        android:id="@+id/checkBox_ajout_dejaPecher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:buttonTint="#1565C0"
+        android:layout_below="@+id/vue_ajouter_poisson_champ_famille"
+        android:text="Poisson déja pécher" />
+
+
+    <Button
+        android:id="@+id/action_enregistrer_poisson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Enregistrer" />
+
+</RelativeLayout>
